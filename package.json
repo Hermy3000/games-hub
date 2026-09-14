@@ -1,0 +1,13 @@
+{
+  "name": "games-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beelink games launcher for Scorched Arena and Ashen Gate",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
