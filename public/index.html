@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beelink Games</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="wrap">
+    <header>
+      <p class="eyebrow">BEELINKMINIS</p>
+      <h1>Games</h1>
+      <p class="sub">Pick a game. Status refreshes every few seconds.</p>
+    </header>
+
+    <section class="grid" id="games">
+      <article class="card" data-game="scorch">
+        <div class="badge" id="scorch-badge">checking…</div>
+        <h2>Scorched Arena</h2>
+        <p>Artillery combat — solo vs AI, hotseat, or online lobby.</p>
+        <div class="meta">Port 3850</div>
+        <div class="actions">
+          <a class="btn primary" id="scorch-play" href="http://127.0.0.1:3850/" target="_blank" rel="noopener">Play</a>
+          <button class="btn ghost" type="button" data-start="scorch">Start server</button>
+        </div>
+      </article>
+
+      <article class="card ashen" data-game="ashen">
+        <div class="badge" id="ashen-badge">checking…</div>
+        <h2>Ashen Gate</h2>
+        <p>Tower defense — place towers, call waves, hold the keep.</p>
+        <div class="meta">Port 8090</div>
+        <div class="actions">
+          <a class="btn primary" id="ashen-play" href="http://127.0.0.1:8090/" target="_blank" rel="noopener">Play</a>
+          <button class="btn ghost" type="button" data-start="ashen">Start server</button>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>LAN tip: from another device use this PC’s IP with the same ports.</p>
+      <p class="hint" id="hint"></p>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
